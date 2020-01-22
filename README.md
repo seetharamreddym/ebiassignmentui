@@ -7,9 +7,15 @@
   https://github.com/seetharamreddym/ebiassignment , So first api spring boot applicaiton need to be started before starting this.
   
 
-## Available Scripts
+## How to setup
 
-In the project directory, you can run:
+$ git clone  https://github.com/seetharamreddym/ebiassignmentui.git
+
+$ cd ebiassignmentui
+
+
+In the project directory, you run:
+
 
 ### `npm install`
 
