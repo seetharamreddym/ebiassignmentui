@@ -37,7 +37,12 @@ class PersonEdit extends Component {
     const value = target.value;
     const name = target.name;
     let item = {...this.state.item};
+    if(name !== 'hobby') {
     item[name] = value;
+    } 
+    else{
+    	item[name] = value.split(',');    	
+    }
     this.setState({item});
   }
 
@@ -90,6 +95,11 @@ class PersonEdit extends Component {
                    onChange={this.handleChange} autoComplete="favourite_color"/>
           </FormGroup>
        
+         <FormGroup>
+            <Label for="hobby">Hobbies</Label>
+            <Input type="text" name="hobby" id="hobby" value={item.hobby || ''}
+                   onChange={this.handleChange} autoComplete="hobby"/>
+          </FormGroup>
        
           <FormGroup>
             <Button color="primary" type="submit">Save</Button>{' '}
