@@ -10,7 +10,8 @@ class PersonEdit extends Component {
     first_name: '',
     last_name: '',
     age: '',
-    favourite_color: ''
+    favourite_color: '',
+    hobby: ''
    
   };
 
